@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>学年</th>
+            <td>
+                <button class="optionButton" onclick="changeOptions1();changeColor(this)">J1</button>
+                <button class="optionButton" onclick="changeOptions2();changeColor(this)">J2</button>
+                <button class="optionButton" onclick="changeOptions3();changeColor(this)">J3</button>
+                <button class="optionButton" onclick="changeOptions4();changeColor(this)">J4</button>
+                <button class="optionButton" onclick="changeOptions5();changeColor(this)">J5</button>
+            </td>
+        </tr>
+        <tr>
+            <th>教科</hh>
+            <td>
+                <select id="subject" oninput="convertToNumber()">
+                    <option value="国語">国語</option>
+                    <option value="歴史">歴史</option>
+                    <option value="基礎数学">基礎数学</option>
+                    <option value="物理">物理</option>
+                    <option value="EC">EC</option>
+                    <option value="EE">EE</option>
+                    <option value="情報工学基礎">情報工学基礎</option>
+                    <option value="工学リテラシ">工学リテラシ</option>
+                    <option value="プログラミング">プログラミング</option>
+                    <option value="">電気電子基礎</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th>テスト点</th>
+            <td>
+                <input type="number" id="testScore" oninput="convertToNumber()">
+                <button onclick="clearTestScore()">クリア</button>
+            </td>
+        </tr>
+        <tr>
+            <th>ポートフォリオ</th>
+            <td>
+                <input type="text" id="portfolio" list="item_list" oninput="convertToNumber()">
+                <button onclick="clearPortfolio()">クリア</button>
+                <datalist id="item_list">
+                    <option>10</option>
+                    <option>20</option>
+                    <option>30</option>
+                    <option>40</option>
+                    <option>50</option>
+                    <option>60</option>
+                    <option>70</option>
+                </datalist>
+            </td>
+        </tr>
+        <tr>
+            <th>成績</th>
+            <td id="grade">
+            </td>
+        </tr>
+    </table>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

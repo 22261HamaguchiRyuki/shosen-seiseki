@@ -1,0 +1,88 @@
+/* 全体のスタイル */
+html {
+    font-size: 40px; /* フォントサイズを40pxに設定 */
+    display: flex; /* フレックスボックスレイアウトを適用 */
+    justify-content: center; /* 主軸（横軸）方向に中央揃え */
+    align-items: center; /* 交差軸（縦軸）方向に中央揃え */
+    height: 100vh; /* ビューポートの高さを100%に設定 */
+    text-align: center; /* テキストを中央揃え */
+}
+
+/* ラッパーのスタイル */
+.wrapper {
+    display: flex; /* フレックスボックスレイアウトを適用 */
+}
+
+.wrapper>div {
+    width: 300px; /* 子要素のdivの幅を300pxに設定 */
+}
+
+/* テーブルのスタイル */
+table, th, td {
+    border: 5px solid black; /* ボーダーを黒色の5pxに設定 */
+    border-collapse: collapse; /* セルのボーダーを重ねて表示 */
+}
+
+th, td {
+    padding: 15px; /* セルのパディングを15pxに設定 */
+    text-align: left; /* テキストを左揃え */
+}
+
+/* セレクトボックスのスタイル */
+select {
+    width: 400px; /* 幅を400pxに設定 */
+    height: 1rem; /* 高さを1remに設定 */
+    font-size: 0.75rem; /* フォントサイズを0.75remに設定 */
+}
+
+select:hover {
+    background-color: white; /* ホバー時の背景色を白に設定 */
+}
+
+/* 入力フィールドのスタイル */
+input {
+    font-size: 0.8rem; /* フォントサイズを0.8remに設定 */
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none; /* スピンボタンを非表示に設定（WebKitブラウザ用） */
+    margin: 0; /* マージンを0に設定 */
+}
+
+/* Firefox用 */
+input[type=number] {
+    appearance: textfield; /* 数値入力フィールドのスピンボタンを非表示に設定（Firefox用） */
+    -moz-appearance: textfield; /* 数値入力フィールドのスピンボタンを非表示に設定（Firefox用） */
+}
+
+/* ボタンのスタイル */
+button {
+    border-radius: 12px; /* ボーダーラジウスを12pxに設定 */
+    font-size: 0.9rem; /* フォントサイズを0.9remに設定 */
+    height: 1.5rem; /* 高さを1.5remに設定 */
+}
+
+button:hover {
+    background-color: rgb(157, 167, 171); /* ホバー時の背景色を設定 */
+    color: black; /* ホバー時の文字色を黒に設定 */
+}
+
+button:active {
+    background-color: white; /* アクティブ時（クリック時）の背景色を白に設定 */
+    color: darkblue; /* アクティブ時の文字色を濃紺に設定 */
+    box-shadow: none; /* アクティブ時のボックスシャドウを無効に設定 */
+    transform: translate(2px, 2px); /* アクティブ時の位置を右下に2pxずつずらす */
+}
+
+/* 押されたボタンの色を変える */
+.active {
+    background-color: #898989; /* 背景色を#898989に設定 */
+    color: white; /* 文字色を白に設定 */
+}
+
+/* 成績の文字のスタイル */
+#grade {
+    color: red; /* 文字色を赤に設定 */
+    font-size: 1.0rem; /* フォントサイズを1.0remに設定 */
+    text-shadow: 3px 3px 3px gray; /* テキストシャドウを灰色の3pxに設定 */
+}
